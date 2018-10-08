@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje próby z kodem :D </title>
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nag1" >
+        <div class="window">
+            <div class="slider">
+                <img src="../moje proby z kodem xd/img/sl1/1.jpg" width="1500" height="900"  alt="">
+            </div>
+            
+        </div>
+        <div class="header_glowna">
+            <nav class="menu">
+             <a class="odn-do-podstr" href="../moje proby z kodem xd/index.html">O mnie </a>
+             <a class="odn-do-podstr" href="#">Rysunek i malarstwo</a>
+             <a class="odn-do-podstr" href="#">Fotografia</a>
+             <a class="odn-do-podstr" href="#">Cennik</a>
+             <a class="odn-do-podstr" href="#">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <article class="artykul2">
+
+            <h1 class="h1">Galeria prac</h1>
+            <div class="line-und-txt"></div>
+            <br><br>
+            <p class="txt-art2"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br> <br>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+                     ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.<br> <br> Ut enim ad minima veniam,
+                    quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
+                    reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"<br>
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+                     ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.<br> Ut enim ad minima veniam,
+                    quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
+                    reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" <br><br>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br> <br>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+                     ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.<br> <br> 
+                </p>
+        <div class="gallery-carousel">
+            
+            <div class="container">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/1.JPG"  alt="">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/2.JPG" alt="">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/3.JPG" alt="">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/4.JPG" alt="">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/5.JPG" alt="">
+                <img class="ph-prac-poj" src="../moje proby z kodem xd/img/rys-mal/6.JPG" alt="">
+            </div>
+
+        <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="next" onclick="plusDivs(+1)">&#10095;</button>
+
+        </div>
+    </article>
+    <footer class="footer">
+            <div class="tlo-stop">
+                <p> joanna146.zubilewicz@gmail.com</p>
+                <p> &copy; 2018 Wszelkie prawa zastrzeżone </p>
+            </div>
+                </footer>
+
+    <script>
+                let slideIndex = 1;
+                showDivs(slideIndex);
+
+            function plusDivs(n) {
+                 showDivs(slideIndex += n);
+                }
+
+            function showDivs(n) {
+                let i;
+                let x = document.getElementsByClassName("ph-prac-poj");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                     x[slideIndex-1].style.display = "block";  
+                                }
+    </script>
+            </body>
+            </html>
